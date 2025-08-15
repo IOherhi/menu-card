@@ -1,0 +1,53 @@
+.tasks {
+  height: 100px;
+  width: 200px;
+  margin-top: 35px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  &__h1 {
+    font-size: 60px;
+    font-weight: 600px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Mozilla Headline', sans-serif;
+  }
+
+  &-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 10px;
+
+    &__item {
+      background-color: rgb(0, 0, 0);
+      color: white;
+
+      height: 45px;
+      width: 80px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      will-change: transform;
+      transition: transform 150ms;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 3px 0.5px black;
+      }
+    }
+  }
+}
+
+.activeTask {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}

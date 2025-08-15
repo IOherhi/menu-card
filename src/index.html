@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <script defer src="/src/index.js"></script>
+    <title>Task</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="tasks">
+      <h1 class="tasks__h1">Tasks</h1>
+
+      <div class="tasks-buttons">
+        <button class="tasks-buttons__item button-menu">Menu</button>
+        <button class="tasks-buttons__item button-card">Card</button>
+      </div>
+    </div>
+
+    <nav class="menu-page">
+      <button class="close-menu"></button>
+
+      <div class="menu-page__content">
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="burger-icon">
+          <img
+            class="burger-icon__content"
+            src="/public/icons/menu-icon-white-png.jpg"
+            alt="burger"
+          />
+        </label>
+
+        <ul class="menu" id="showMenu">
+          <li class="menu__item">Home</li>
+
+          <li class="menu__item">
+            Products
+            <ul class="submenu">
+              <li>Laptops</li>
+              <li>Phones</li>
+              <li>Tablets</li>
+              <li>Accessories</li>
+            </ul>
+          </li>
+
+          <li class="menu__item">
+            Services
+
+            <ul class="submenu">
+              <li>Delivery</li>
+              <li>Warranty</li>
+              <li>Technical support</li>
+            </ul>
+          </li>
+
+          <li class="menu__item">About us</li>
+          <li class="menu__item">Contacts</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="card-page">
+      <button class="close-card"></button>
+
+      <article class="card">
+        <div class="card-content">
+          <div class="card-content__top">
+            <p class="card-content__top-p">Nearest Seller</p>
+
+            <input type="checkbox" id="favourites" />
+
+            <label
+              title="Сan be clicked"
+              class="card-content__top-button"
+              for="favourites"
+            >
+            </label>
+          </div>
+
+          <img
+            class="card-content__img"
+            src="/public/images/card-img.png"
+            alt="Card-img"
+          />
+
+          <h1 class="card-content__h1">Wireless bluetooth headset</h1>
+
+          <div class="card-content__price">
+            <p class="card-content__price-p">Shipped in 3-4 days</p>
+
+            <div class="card-content__price-prices">
+              <div>$35</div>
+
+              <div>$45</div>
+            </div>
+          </div>
+
+          <div class="card-content__bottom">
+            <button class="card-content__bottom-cart">Add Cart</button>
+            <button class="card-content__bottom-buy">Buy</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
